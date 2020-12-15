@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+  <!-- development -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">  
+
+
+  <link rel="stylesheet" href="../annotorious/dist/annotorious.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="../annotorious/dist/annotorious.min.js"></script>
+
+</head>
+
+<body>
+
+  <header class="bg-gray-100 text-gray-500 p-4 flex items-center">
+    <h1 class="hide" id="back">
+      <i class="fa fa-arrow-left text-2xl"></i>
+    </h1>
+    <h1 class="text-2xl ml-5">Autosift Reports</h1>
+
+  </header>
+
+  <div class="grid grid-cols-2 h-full">
+
+    <!-- left -->
+    <div>
+      <div id="upload_pdf" class="hide">
+        <label id="pdfs"
+          class="w-full text-center text-blue-100 bg-blue-500 border-4 border-xl border-dashed border-blue-100 py-20 mt-20">
+          <input type="file" id="file" multiple :accept="mime" />
+          <span>Upload PDFs</span>
+        </label>
+      </div>
+
+      <div id="pdf" class="bg-blue-100 mx-auto w-8/12 ">
+        <h1 class="text-center text-blue-500 py-3" id="name">helo.pdf</h1>
+        <div class="col-md-6" id="pdf-card">
+          <div class=" py-4 text-gray-200 px-5 flex justify-around items-center" id="pdf-action">
+            <button id="prev">
+              <i class="fa fa-reply" aria-hidden="true"></i>
+            </button>
+            <span>
+              <input type="number" name="page" id="pageNum" value="0"
+                class="w-10 bg-transparent outline-none text-right">
+              /
+              <span id="page_count" style="padding-left: 8px">0</span>
+            </span>
+            <button id="next">
+              <i class="fa fa-share" aria-hidden="true"></i>
+            </button>
+            <button id="zoom-out">
+              <i class="fa fa-search-minus" aria-hidden="true"></i>
+            </button>
+            <button id="zoom-in">
+              <i class="fa fa-search-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="canvas-container">
+          <canvas id="the-canvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- right -->
+    <div class="bg-blue-500 h-full">
+
+    </div>
+    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+  <!-- <script src="./assets/annotorious2.min.js"></script> -->
+
+  <script src="./app.bundle.js"></script>
+
+</body>
+
+</html>

@@ -47,3 +47,8 @@ recogito-client-core/themes/default/
 ## final generate files
 `/annotorious/dist/annotorious.min.css`
 `/annotorious/dist/annotorious.min.js`
+
+## final test app on pdf after build
+
+test/index.html run file
+
