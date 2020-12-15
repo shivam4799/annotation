@@ -34,7 +34,7 @@ const Editor = props => {
 
     // Apply template if needed 
     const annotation = shouldApplyTemplate ? props.annotation.clone({ body: [ ...props.applyTemplate ]}) : props.annotation;
-    console.log("useEffect =-----------",props.value);
+
       
 
     // The 'currentAnnotation' differs from props.annotation because
@@ -103,7 +103,7 @@ const Editor = props => {
   );
 
   const onUpdateBody = (previous, updated) => {
-    console.log("update Body ///////////////",previous,updated);
+
     
     setCurrentAnnotation(
     currentAnnotation.clone({
