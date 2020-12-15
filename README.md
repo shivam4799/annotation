@@ -37,3 +37,13 @@ recogito-client-core/themes/default/
 
 
 # production
+
+
+`cd annotorious`
+
+`npm run build`
+
+
+## final generate files
+`/annotorious/dist/annotorious.min.css`
+`/annotorious/dist/annotorious.min.js`
