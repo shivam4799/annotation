@@ -1,0 +1,109 @@
+*{
+  box-sizing: content-box;
+}
+
+svg{
+  display: inline-block;
+}
+.r6o-btn {
+  line-height: normal;
+}
+
+.hide {
+  display: none;
+}
+
+#the-canvas {
+  border: 1px solid black;
+  direction: ltr;
+  margin: 0 auto;
+}
+
+#pdfs input {
+  display: none;
+}
+
+#pdfs {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 2em;
+  cursor: pointer;
+}
+#pdf-action {
+
+  background-color: rgba(80, 80, 80, 0.7);
+  width: 30%;
+  position: absolute;
+  bottom: 3%;
+  margin-left: 10%;
+  z-index: 999;
+}
+
+body {
+  height: 90vh;
+}
+
+#pdf{
+  width: 100%;
+overflow: scroll;
+height: 90vh; 
+}
+
+#canvas-container {
+  cursor: crosshair;
+  text-align: center;
+}
+
+
+#canvas-container .a9s-annotationlayer .a9s-annotation .outer,
+#canvas-container .a9s-annotationlayer .a9s-selection .outer {
+  stroke: rgb(253, 213, 113);
+  stroke-width: 3px;
+}
+
+#canvas-container .a9s-annotationlayer .a9s-annotation .inner,
+#canvas-container .a9s-annotationlayer .a9s-selection .inner {
+  stroke: rgb(253, 213, 113);
+  stroke-width: 1px;
+}
+
+#canvas-container .a9s-annotationlayer .vertex-handle .vertex-handle-inner {
+  fill: #fff;
+  stroke: #ccc;
+}
+
+#canvas-container .a9s-annotationlayer .vertex-handle:hover .vertex-handle-inner {
+  fill: #fff;
+}
+
+/* #canvas-container  .a9s-annotationlayer .vertex-handle .vertex-handle-inner {
+fill:#fff;
+} */
+
+#canvas-container .a9s-annotationlayer .vertex-handle .vertex-handle-outer {
+  fill: #fff;
+  stroke: #fff;
+}
+
+#canvas-container>div>svg>g>g>g:nth-child(2) {
+  cursor: nw-resize;
+}
+
+#canvas-container>div>svg>g>g>g:nth-child(4) {
+  cursor: nw-resize;
+}
+
+#canvas-container>div>svg>g>g>g:nth-child(3) {
+  cursor: ne-resize;
+}
+
+#canvas-container>div>svg>g>g>g:nth-child(5) {
+  cursor: sw-resize;
+}
+#canvas-container .r6o-editor .footer .r6o-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+

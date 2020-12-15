@@ -1,0 +1,121 @@
+.r6o-editor {
+  top:0;
+  left:0;
+}
+
+.a9s-annotationlayer {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+
+  -webkit-user-select:none; 
+     -moz-user-select:none;
+      -ms-user-select:none;
+       -o-user-select:none;
+          user-select:none;
+          
+g>g:nth-child(2) {
+  cursor: nw-resize;
+}
+
+g>g:nth-child(4) {
+  cursor: nw-resize;
+}
+
+g>g:nth-child(3) {
+  cursor: ne-resize;
+}
+
+g>g:nth-child(5) {
+  cursor: sw-resize;
+}
+
+}
+
+.a9s-selection-mask {
+  stroke:none;
+  fill:transparent;
+  pointer-events:none;
+}
+
+.a9s-annotation, .a9s-selection {
+
+  rect, polygon {
+    fill:transparent;
+    cursor:pointer;
+    vector-effect:non-scaling-stroke;
+  }
+
+  .a9s-inner {
+    // stroke:#fff;
+    stroke: rgb(253, 213, 113);
+
+    stroke-width:1px;
+  }
+
+  .a9s-inner:hover {
+    stroke:#fff000;
+  }
+
+  .a9s-outer {
+    // stroke:rgba(0, 0, 0, 0.7);
+    stroke-width:3px;
+    // stroke: #fff000;
+    // stroke: #fff000;
+    stroke:rgb(253, 213, 113);
+  }
+
+}
+
+.a9s-annotation.selected .a9s-inner, .a9s-selection .a9s-inner {
+  // stroke:#fff000;
+  stroke: rgb(253, 213, 113);
+  stroke-width: 1px;
+} 
+
+.a9s-annotation.editable {
+
+  .a9s-inner {
+    // stroke:#fff000;
+    stroke: rgb(253, 213, 113);
+    stroke-width: 1px;
+    cursor:move;
+  }
+
+  .a9s-inner:hover {
+    fill:rgba(255, 240, 0, 0.1);
+  }
+
+}
+
+.a9s-handle {
+  cursor:move;
+
+  .a9s-handle-inner {
+    // stroke:#fff000;
+    // fill:#000;  
+
+    fill: #fff;
+    stroke: #ccc;
+  }
+
+  .a9s-handle-outer {
+    // stroke:#000;
+    // fill:#fff;
+
+
+    fill: #fff;
+    stroke: #fff;
+  }
+}
+
+.a9s-handle:hover .a9s-handle-inner {
+  // fill:#fff000;
+
+  fill: #fff;
+  stroke: #ccc;
+}
+
+
