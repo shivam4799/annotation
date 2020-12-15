@@ -69,7 +69,7 @@ export default class AnnotationLayer extends EventEmitter {
   }
 
   selectCurrentHover = () => {
-    console.log(this.currentHover);
+
     
     if (this.currentHover) {
       this.selectShape(this.currentHover);
